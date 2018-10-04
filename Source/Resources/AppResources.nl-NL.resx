@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>over</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>over</value>
+  </data>
+  <data name="ApplicationInformation" xml:space="preserve">
+    <value>Applicatie informatie</value>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>MIJN TELEFONISCHE VERGADERINGEN</value>
+  </data>
+  <data name="ApplicationTitleLong" xml:space="preserve">
+    <value>Mijn Telefonische Vergaderingen voor Windows® Phone</value>
+  </data>
+  <data name="ApplicationTitleNormal" xml:space="preserve">
+    <value>Mijn Telefonische Vergaderingen</value>
+  </data>
+  <data name="ApplicationVersion" xml:space="preserve">
+    <value>Versie {0}</value>
+  </data>
+  <data name="Attendees" xml:space="preserve">
+    <value>genodigden</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>bel</value>
+  </data>
+  <data name="ConferenceNumber" xml:space="preserve">
+    <value>Inbelnummer</value>
+  </data>
+  <data name="ConferenceNumberExample" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConferenceNumberHelp" xml:space="preserve">
+    <value>Het inbelnummer voor uw telefonische vergaderingen.</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© 2013 NavaTron Corporation. Alle rechten voorbehouden.</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>details</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>support@navatron.com</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="HelpBody1" xml:space="preserve">
+    <value>Start snel en veilig uw telefonische vergaderingen terwijl u onderweg bent. U hoeft geen inbelnummers, afspraak ID’s en PIN codes meer in te vullen.</value>
+  </data>
+  <data name="HelpBody2" xml:space="preserve">
+    <value>Als uw naam overeenkomt met de eigenaar van de telefonische vergaderingen, dan wordt u verbonden als eigenaar. Uw inbelnummer wordt gebruikt om deel te nemen aan de telefonische vergaderingen. Alle andere informatie wordt uit uw agenda gehaald.</value>
+  </data>
+  <data name="HelpBody3" xml:space="preserve">
+    <value>Microsoft® OCS® 2007
+Microsoft® Lync® 2010
+GoTo Meeting®</value>
+  </data>
+  <data name="HelpPageTitle" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="HelpTitle1" xml:space="preserve">
+    <value>Verbind met een enkele aanraking</value>
+  </data>
+  <data name="HelpTitle2" xml:space="preserve">
+    <value>Automatische eigenaar herkenning</value>
+  </data>
+  <data name="HelpTitle3" xml:space="preserve">
+    <value>Ondersteunde telefonische vergaderingen</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="LeaderName" xml:space="preserve">
+    <value>Eigenaar naam</value>
+  </data>
+  <data name="LeaderNameHelp" xml:space="preserve">
+    <value>Voeg uw [Voornaam en Achternaam] in. U wordt verbonden als eigenaar als uw naam overeenkomt met de eigenaar van de telefonische vergaderingen.</value>
+  </data>
+  <data name="LeaderPin" xml:space="preserve">
+    <value>Eigenaar Pin</value>
+  </data>
+  <data name="LeaderPinHelp" xml:space="preserve">
+    <value>De eigenaar PIN (Persoonlijk Identificatie Nummer) wordt gebruikt om u als eigenaar te verbinden.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>lokatie: {0}</value>
+  </data>
+  <data name="Lync" xml:space="preserve">
+    <value>Gebruik Microsoft Lync</value>
+  </data>
+  <data name="LyncDownload" xml:space="preserve">
+    <value>Download de Microsoft Lync client hier</value>
+  </data>
+  <data name="NoConferenceCalls" xml:space="preserve">
+    <value>geen telefonische vergaderingen</value>
+  </data>
+  <data name="Organizer" xml:space="preserve">
+    <value>eigenaar: {0}</value>
+  </data>
+  <data name="PeriodicTaskDescription" xml:space="preserve">
+    <value>Deze achtergrond agent controleert periodiek of er telefonische vergaderingen in uw agenda staan en werkt de bijbehorende Live Tile bij.</value>
+  </data>
+  <data name="RestartForLanguage" xml:space="preserve">
+    <value>Start de applicatie opnieuw op om de taal te wijzigen</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Beoordeling</value>
+  </data>
+  <data name="ReviewOnMarketplace" xml:space="preserve">
+    <value>Beoordeling op de Marketplace</value>
+  </data>
+  <data name="ReviewText" xml:space="preserve">
+    <value>Als u Mijn Telefonische Vergaderingen met plezier gebruikt, vul dan een beoordeling in door middel van onderstaande knop</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>instellingen</value>
+  </data>
+  <data name="SettingsPageTile" xml:space="preserve">
+    <value>instellingen</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="SupportText" xml:space="preserve">
+    <value>Voor vragen, bugs of suggesties, neem contact met ons op door middel van onderstaande knop.</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>vandaag</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>morgen</value>
+  </data>
+  <data name="TryMode" xml:space="preserve">
+    <value>Free try mode expired. Please purchase the full version on the Marketplace, for unlimitted calls.</value>
+  </data>
+  <data name="WarningNoDailNumber" xml:space="preserve">
+    <value>Om u eerste telefonische vergadering te kunnen starten, dient u eerst enkele instelling in het instellingen scherm in te vullen.</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value />
+  </data>
+</root>

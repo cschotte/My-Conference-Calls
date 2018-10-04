@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>acerca de </value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>acerca de</value>
+  </data>
+  <data name="ApplicationInformation" xml:space="preserve">
+    <value>Información de aplicación</value>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>MIS LLAMADAS DE CONFERENCIA</value>
+  </data>
+  <data name="ApplicationTitleLong" xml:space="preserve">
+    <value>Mis Llamadas de Conferencia para Windows® Phone</value>
+  </data>
+  <data name="ApplicationTitleNormal" xml:space="preserve">
+    <value>Mis Llamadas de Conferencia</value>
+  </data>
+  <data name="ApplicationVersion" xml:space="preserve">
+    <value>Versión {0}</value>
+  </data>
+  <data name="Attendees" xml:space="preserve">
+    <value>asistentes</value>
+  </data>
+  <data name="Call" xml:space="preserve">
+    <value>llamada</value>
+  </data>
+  <data name="ConferenceNumber" xml:space="preserve">
+    <value>Número de marcar</value>
+  </data>
+  <data name="ConferenceNumberExample" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConferenceNumberHelp" xml:space="preserve">
+    <value>Introduzca su número de conferencia de sistema. </value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© 2013 NavaTron Corporación. Todos los derechos registrados.</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>detalles</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>support@navatron.com</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>ayuda</value>
+  </data>
+  <data name="HelpBody1" xml:space="preserve">
+    <value>Comienza llamadas rapido y seguro mientras esta en camino. No es nesesario marcar números de conferencia, número de identificacion de la reunion o identificación personal.</value>
+  </data>
+  <data name="HelpBody2" xml:space="preserve">
+    <value>Si su nombre coincide con el nombre del organizador de la reunion, entonces está conectado como líder. Su número se utilizara para llamar a la conferencia.  Toda informacion se obtrenda de su agenda.</value>
+  </data>
+  <data name="HelpBody3" xml:space="preserve">
+    <value>Microsoft® OCS® 2007
+Microsoft® Lync® 2010
+GoTo Meeting®</value>
+  </data>
+  <data name="HelpPageTitle" xml:space="preserve">
+    <value>ayuda</value>
+  </data>
+  <data name="HelpTitle1" xml:space="preserve">
+    <value>Conectar con un solo toque</value>
+  </data>
+  <data name="HelpTitle2" xml:space="preserve">
+    <value>Detección automática de líder</value>
+  </data>
+  <data name="HelpTitle3" xml:space="preserve">
+    <value>Compatible con</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="LeaderName" xml:space="preserve">
+    <value>Nombre de líder</value>
+  </data>
+  <data name="LeaderNameHelp" xml:space="preserve">
+    <value>Introduzca  [Nombre y Apellido]. Si su nombre coincide con el nombre del organizador de la reunion, entonces está conectado como líder.</value>
+  </data>
+  <data name="LeaderPin" xml:space="preserve">
+    <value>Identificación personal líder</value>
+  </data>
+  <data name="LeaderPinHelp" xml:space="preserve">
+    <value>Líder PIN (número de identificación personal) se utiliza para conectarlo como líder.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>ubicación: {0}</value>
+  </data>
+  <data name="Lync" xml:space="preserve">
+    <value>Usar Microsoft Lync</value>
+  </data>
+  <data name="LyncDownload" xml:space="preserve">
+    <value>Bajar Microsoft Lync cliente aqui</value>
+  </data>
+  <data name="NoConferenceCalls" xml:space="preserve">
+    <value>no llamadas de conferencia</value>
+  </data>
+  <data name="Organizer" xml:space="preserve">
+    <value>organizador: {0}</value>
+  </data>
+  <data name="PeriodicTaskDescription" xml:space="preserve">
+    <value>El fondo de tarea controla periódicamente las llamadas de Conferencia en su calendario y actualiza los mosaicos  en vivo en la pantalla de inicio.</value>
+  </data>
+  <data name="RestartForLanguage" xml:space="preserve">
+    <value>Por favor, reinicie la aplicación para aplicar el cambio de idioma</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Revisión</value>
+  </data>
+  <data name="ReviewOnMarketplace" xml:space="preserve">
+    <value>Revisión en Marketplace</value>
+  </data>
+  <data name="ReviewText" xml:space="preserve">
+    <value>Si le gusta usar Mis Llamadas de Conferencia, envíe una revisión haciendo clic en el botón de abajo.</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>configuración</value>
+  </data>
+  <data name="SettingsPageTile" xml:space="preserve">
+    <value>configuración</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Suporte</value>
+  </data>
+  <data name="SupportText" xml:space="preserve">
+    <value>Para preguntas, fallos o peticiones, póngase en contacto con nosotros haciendo clic en el botón de abajo.</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>hoy</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>mañana</value>
+  </data>
+  <data name="TryMode" xml:space="preserve">
+    <value>Modo de prueba libre caducado. Adquiera la versión completa en Marketplace, para llamadas sin límites.</value>
+  </data>
+  <data name="WarningNoDailNumber" xml:space="preserve">
+    <value>Para iniciar su primera llamada, deberá introducir algunos ajustes. Vaya a la página de configuración.</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value />
+  </data>
+</root>

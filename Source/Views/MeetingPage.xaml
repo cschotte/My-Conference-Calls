@@ -1,0 +1,63 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MyConferenceCalls.MeetingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:my="clr-namespace:MyConferenceCalls"
+    xmlns:conv="clr-namespace:MyConferenceCalls.Converters"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <my:Localization x:Key="Localization" />
+
+        <conv:LocationConverter x:Key="LocationConverter" />
+        <conv:OrganizerConverter x:Key="OrganizerConverter" />
+
+        <DataTemplate x:Key="AttendeesDataTemplate">
+            <StackPanel Margin="0,0,0,17" Width="442">
+                <TextBlock Text="{Binding DisplayName}" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource Localization}}">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="{Binding Path=LocalizedResources.Details, Source={StaticResource Localization}}">
+                <ScrollViewer Margin="0,0,-12,0">
+                <StackPanel>
+                        <TextBlock Text="{Binding Meeting.Subject}" Style="{StaticResource PhoneTextExtraLargeStyle}"  TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding Meeting.StartTime, StringFormat=f}" Style="{StaticResource PhoneTextAccentStyle}"/>
+                        <TextBlock Text="{Binding Meeting.Location, Converter={StaticResource LocationConverter}}" Style="{StaticResource PhoneTextSubtleStyle}" />
+                        <TextBlock Text="{Binding Meeting.Organizer.DisplayName, Converter={StaticResource OrganizerConverter}}" Style="{StaticResource PhoneTextSubtleStyle}" />
+
+                        <TextBlock Text="{Binding Meeting.Details}" Margin="12,20,12,0" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" />
+                </StackPanel>
+                </ScrollViewer>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="{Binding Path=LocalizedResources.Attendees, Source={StaticResource Localization}}">
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Meeting.Attendees}" ItemTemplate="{StaticResource AttendeesDataTemplate}"/>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/Phone.png" Text="Call" Click="CallButton_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>

@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:MyConferenceCalls"
+    xmlns:t="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    x:Class="MyConferenceCalls.SettingsPage"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <phone:PhoneApplicationPage.Resources>
+        <my:Localization x:Key="Localization" />
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="{Binding LocalizedResources.ApplicationTitle, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="{Binding LocalizedResources.SettingsPageTile, Source={StaticResource Localization}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <t:ListPicker x:Name="LanguagePicker" Header="{Binding LocalizedResources.Language, Source={StaticResource Localization}}" ItemsSource="{Binding Language}" DisplayMemberPath="Value" SelectionChanged="LanguagePicker_SelectionChanged" Margin="12,0" />
+
+                    <t:ToggleSwitch Header="{Binding LocalizedResources.Lync, Source={StaticResource Localization}}" Name="lyncToggleSwitch" IsChecked="{Binding UseLync, Mode=TwoWay}" Margin="0,10,0,0" />
+                    <HyperlinkButton Content="{Binding LocalizedResources.LyncDownload, Source={StaticResource Localization}}" HorizontalContentAlignment="Left" Margin="0,-22,0,0" NavigateUri="http://windowsphone.com/s?appid=9ce93e51-5b35-e011-854c-00237de2db9e" TargetName="_blank" />
+
+                    <TextBlock Text="{Binding LocalizedResources.LeaderName, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,18,12,0"/>
+                    <TextBox x:Name="leadernameTextBox" MaxLength="50" Text="{Binding LeaderName, Mode=TwoWay}" InputScope="PersonalFullName" />
+                    <TextBlock Text="{Binding LocalizedResources.LeaderNameHelp, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Margin="12,-4,12,0" />
+
+                    <TextBlock Text="{Binding LocalizedResources.LeaderPin, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,18,12,0"/>
+                    <PasswordBox x:Name="leaderpinTextBox" Password="{Binding LeaderPin, Mode=TwoWay}" MaxLength="10" />
+                    <TextBlock Text="{Binding LocalizedResources.LeaderPinHelp, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Margin="12,-4,12,0" />
+                    
+                    <TextBlock Text="{Binding LocalizedResources.ConferenceNumber, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,18,12,0" />
+                    <TextBox x:Name="conferencenumberTextBox" MaxLength="20" Text="{Binding ConferenceNumber, Mode=TwoWay}" InputScope="TelephoneNumber"/>
+                    <TextBlock Text="{Binding LocalizedResources.ConferenceNumberHelp, Source={StaticResource Localization}}" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Margin="12,-4,12,0" />
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
