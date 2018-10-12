@@ -12,6 +12,6 @@ Basically what the app does is to show all your conference calls for the day. Wi
 
 Copyright (c) 2018 by NavaTron. All rights reserved.
 
-Code License: [MIT](LICENSE)
+*Code License: [MIT](LICENSE)*
 
 Applies to all other files
